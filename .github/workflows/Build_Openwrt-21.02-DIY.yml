@@ -51,7 +51,7 @@ on:
 
 env:
   REPO_URL: https://github.com/siwind/openwrt # https://github.com/yuos-bit/openwrt
-  REPO_BRANCH: openwrt-21.02
+  REPO_BRANCH: master # openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/21.02/Yuos_${{ github.event.inputs.model }}.config
   DIY_P1_SH: diy-part8-diy.sh
