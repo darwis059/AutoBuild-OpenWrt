@@ -7,7 +7,7 @@ on:
       model:
         description: 'Pilih Model'
         required: true
-        default: 'Redmi_AC2100'
+        default: 'E8820v2'
         type: choice
         options:
           - 'miwifi-4'
@@ -68,6 +68,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
+          sudo add-apt-repository ppa:fkrull/deadsnakes
           sudo apt-get -qq update && sudo apt-get -qq upgrade
           sudo apt-get -qq install $(cat $DEPENDENCIES)
           sudo apt-get -qq autoremove --purge
