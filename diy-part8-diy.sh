@@ -84,6 +84,6 @@ sed -i 's/dnsmasq/dnsmasq-full firewall iptables/g' include/target.mk
 
 
 # Update openssl 3.0
-rm -rf package/libs/openssl
-git clone -b openssl https://github.com/yuos-bit/other package/openssl
-cp -rf $GITHUB_WORKSPACE/patchs/immortalwrt-mt798x/openssl-module.mk $GITHUB_WORKSPACE/openwrt/include/openssl-module.mk
+# rm -rf package/libs/openssl
+# git clone -b openssl https://github.com/yuos-bit/other package/openssl
+# cp -rf $GITHUB_WORKSPACE/patchs/immortalwrt-mt798x/openssl-module.mk $GITHUB_WORKSPACE/openwrt/include/openssl-module.mk
