@@ -68,7 +68,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo add-apt-repository ppa:fkrull/deadsnakes
+          sudo add-apt-repository ppa:deadsnakes/ppa
           sudo apt-get -qq update && sudo apt-get -qq upgrade
           sudo apt-get -qq install $(cat $DEPENDENCIES)
           sudo apt-get -qq autoremove --purge
